@@ -301,6 +301,275 @@
       "operation": "migrate",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "6.3.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "create monolithic films table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V1_0_0__create_monolithic_films_table.sql",
+          "executionTime": 462
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create stars table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V2_0_0__create_stars_table.sql",
+          "executionTime": 452
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create writers table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V3_0_0__create_writers_table.sql",
+          "executionTime": 485
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V4_0_0__create_director_table.sql",
+          "executionTime": 443
+        },
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "description": "normalize films adding FKs",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V5_0_0__normalize_films_adding_FKs.sql",
+          "executionTime": 584
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.0",
+          "description": "insert data to directors",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V6_0_0__insert_data_to_directors.sql",
+          "executionTime": 431
+        },
+        {
+          "category": "Versioned",
+          "version": "6.1.0",
+          "description": "insert data to writers",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V6_1_0__insert_data_to_writers.sql",
+          "executionTime": 437
+        },
+        {
+          "category": "Versioned",
+          "version": "6.2.0",
+          "description": "insert data to stars",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V6_2_0__insert_data_to_stars.sql",
+          "executionTime": 432
+        },
+        {
+          "category": "Versioned",
+          "version": "6.3.0",
+          "description": "insert data to films",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V6_3_0__insert_data_to_films.sql",
+          "executionTime": 444
+        }
+      ],
+      "migrationsExecuted": 9,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:36:35.809905200",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "create monolithic films table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V1_0_0__create_monolithic_films_table.sql",
+          "executionTime": 529
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create stars table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V2_0_0__create_stars_table.sql",
+          "executionTime": 604
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create writers table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V3_0_0__create_writers_table.sql",
+          "executionTime": 520
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V4_0_0__create_director_table.sql",
+          "executionTime": 490
+        },
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "description": "normalize films adding FKs",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V5_0_0__normalize_films_adding_FKs.sql",
+          "executionTime": 640
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.0",
+          "description": "insert data to directors",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V6_0_0__insert_data_to_directors.sql",
+          "executionTime": 484
+        },
+        {
+          "category": "Versioned",
+          "version": "6.1.0",
+          "description": "insert data to writers",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V6_1_0__insert_data_to_writers.sql",
+          "executionTime": 479
+        },
+        {
+          "category": "Versioned",
+          "version": "6.2.0",
+          "description": "insert data to stars",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V6_2_0__insert_data_to_stars.sql",
+          "executionTime": 471
+        },
+        {
+          "category": "Versioned",
+          "version": "6.3.0",
+          "description": "insert data to films",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V6_3_0__insert_data_to_films.sql",
+          "executionTime": 478
+        }
+      ],
+      "migrationsExecuted": 9,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:52:28.252953200",
+      "operation": "migrate",
+      "exception": "Migration V7_0_0__extension_create_persons_table_and_refactor_old_tables.sql failed\n-----------------------------------------------------------------------------------\nSQL State  : 2BP01\nError Code : 0\nMessage    : ERROR: cannot drop table directors because other objects depend on it\n  Detail: constraint fk_director_id on table films depends on table directors\n  Hint: Use DROP ... CASCADE to drop the dependent objects too.\nLocation   : db/migrations/V7_0_0__extension_create_persons_table_and_refactor_old_tables.sql (C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V7_0_0__extension_create_persons_table_and_refactor_old_tables.sql)\nLine       : 1\nStatement  : drop table directors\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.3.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:53:17.598274200",
+      "operation": "migrate",
+      "exception": "Migration V7_0_0__extension_create_persons_table_and_refactor_old_tables.sql failed\n-----------------------------------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"unique\"\n  Position: 184\nLocation   : db/migrations/V7_0_0__extension_create_persons_table_and_refactor_old_tables.sql (C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V7_0_0__extension_create_persons_table_and_refactor_old_tables.sql)\nLine       : 9\nStatement  : --create directors, stars, writers tables which have the people key as a unique identifier\r\ncreate table directors \r\n(\r\npeople_id int, \r\nFOREIGN KEY (people_id) REFERENCES people(id) unique,\r\ncountry text\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.3.0",
+      "targetSchemaVersion": "7.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "7.0.0",
+          "description": "extension create persons table and refactor old tables",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V7_0_0__extension_create_persons_table_and_refactor_old_tables.sql",
+          "executionTime": 1145
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:54:49.304060600",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "7.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:56:12.245580100",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "7.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:56:40.547434400",
+      "operation": "migrate",
+      "exception": "Migration V7_0_1__extension_insert_data_to_all_tables.sql failed\n----------------------------------------------------------------\nSQL State  : 23503\nError Code : 0\nMessage    : ERROR: insert or update on table \"actors\" violates foreign key constraint \"actors_people_id_fkey\"\n  Detail: Key (people_id)\u003d(1) is not present in table \"people\".\nLocation   : db/migrations/V7_0_1__extension_insert_data_to_all_tables.sql (C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V7_0_1__extension_insert_data_to_all_tables.sql)\nLine       : 2\nStatement  : --add values\r\ninsert into actors (people_id, dob) (\r\nVALUES\r\n(1,\u002730/05/1936\u0027),\r\n(2,\u002725/09/1951\u0027),\r\n(3,\u002705/04/1916\u0027),\r\n(4,\u002711/11/1974\u0027),\r\n(5,\u002714/04/1940\u0027),\r\n(6,\u002704/10/1923\u0027),\r\n(7,\u002714/08/1908\u0027),\r\n(8,\u002723/01/1944\u0027),\r\n(9,\u002709/03/1964\u0027),\r\n(10,\u002727/12/1948\u0027)\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "7.0.0",
+      "targetSchemaVersion": "7.0.1",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "7.0.1",
+          "description": "extension insert data to all tables",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V7_0_1__extension_insert_data_to_all_tables.sql",
+          "executionTime": 749
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:58:09.681467900",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }
