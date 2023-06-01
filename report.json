@@ -299,6 +299,69 @@
       "operation": "migrate",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.7",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:20:31.431191",
+      "operation": "migrate",
+      "exception": "Migration V2_1_8__create_film_cast_table.sql failed\n---------------------------------------------------\nSQL State  : 42P01\nError Code : 0\nMessage    : ERROR: relation \"actor\" does not exist\nLocation   : db/migrations/V2_1_8__create_film_cast_table.sql (/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_8__create_film_cast_table.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS Film_Cast (\n\tid SERIAL PRIMARY KEY,\n\tfilm_id INT REFERENCES film(id),\n\tactor_id INT REFERENCES actor(id),\n\tstar_id INT REFERENCES actor(id)\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.7",
+      "targetSchemaVersion": "2.1.8",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.8",
+          "description": "create film cast table",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_8__create_film_cast_table.sql",
+          "executionTime": 695
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:21:14.662108",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.8",
+      "targetSchemaVersion": "2.1.9",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.9",
+          "description": "insert data into film cast table",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_9__insert_data_into_film_cast_table.sql",
+          "executionTime": 705
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:25:40.678971",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }
