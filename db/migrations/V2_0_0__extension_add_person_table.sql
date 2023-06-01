@@ -7,42 +7,42 @@ CREATE TABLE IF NOT EXISTS Person(
 INSERT INTO Person (name)
 SELECT name
 FROM (
-	SELECT name FROM writer
+	SELECT name FROM writers
 	UNION
-	SELECT name FROM director
+	SELECT name FROM directors
 	UNION
-	SELECT name FROM star
+	SELECT name FROM stars
 ) AS temp1;
 -- We must change the tables that we had before
 -- Writer
-ALTER TABLE writer
+ALTER TABLE writers
 ADD COLUMN person_id INT REFERENCES Person (id);
 
-UPDATE writer
+UPDATE writers
 SET person_id = Person.id
 FROM Person
-WHERE writer.name = Person.name;
+WHERE writers.name = Person.name;
 
 --Director
-ALTER TABLE director
+ALTER TABLE directors
 ADD COLUMN person_id INT REFERENCES Person (id);
 
-UPDATE director
+UPDATE directors
 SET person_id = Person.id
 FROM Person
-WHERE director.name = Person.name;
+WHERE directors.name = Person.name;
 
 --Star
-ALTER TABLE star
+ALTER TABLE stars
 ADD COLUMN person_id INT REFERENCES Person (id);
 
-UPDATE star
+UPDATE stars
 SET person_id = Person.id
 FROM Person
-WHERE star.name = Person.name;
+WHERE stars.name = Person.name;
 
 -- And finally we can drop the column of name since it is in the Person table
 
-ALTER TABLE writer DROP COLUMN name;
-ALTER TABLE director DROP COLUMN name;
-ALTER TABLE star DROP COLUMN name;
+ALTER TABLE writers DROP COLUMN name;
+ALTER TABLE directors DROP COLUMN name;
+ALTER TABLE stars DROP COLUMN name;

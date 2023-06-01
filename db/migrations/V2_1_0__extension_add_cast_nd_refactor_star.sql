@@ -1,10 +1,10 @@
-ALTER TABLE star RENAME TO actor;
+ALTER TABLE stars RENAME TO actor;
 -- create the cast table
 CREATE TABLE IF NOT EXISTS "cast" (
     cast_id SERIAL PRIMARY KEY,
     film_id INT,
     actor_id INT,
-    FOREIGN KEY (film_id) REFERENCES film(id),
+    FOREIGN KEY (film_id) REFERENCES films(id),
     FOREIGN KEY (actor_id) REFERENCES actor(id)
 );
 -- as a design choice i want to keep the star of the film inside the film and the cast table will contain only other relevant cast.
