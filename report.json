@@ -1,0 +1,219 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "0.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "0.0.0",
+          "description": "initial table",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V0_0_0__initial_table.sql",
+          "executionTime": 838
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "sxuuxwmi",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:49:45.508477",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "0.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V2_0_0__create_director_table.sql",
+          "executionTime": 802
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "sxuuxwmi",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:58:16.382844",
+      "operation": "migrate",
+      "exception": "Migration V2_1_0__remove_director_details_from_film.sql failed\n--------------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"director_id\"\n  Position: 60\nLocation   : db/migrations/V2_1_0__remove_director_details_from_film.sql (/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V2_1_0__remove_director_details_from_film.sql)\nLine       : 5\nStatement  : ALTER TABLE film\nADD CONSTRAINT fk_director_id\nFOREIGN KEY director_id\nREFERENCES director(id)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "sxuuxwmi",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:59:31.336642",
+      "operation": "migrate",
+      "exception": "Migration V2_1_0__remove_director_details_from_film.sql failed\n--------------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"director_id\"\n  Position: 60\nLocation   : db/migrations/V2_1_0__remove_director_details_from_film.sql (/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V2_1_0__remove_director_details_from_film.sql)\nLine       : 6\nStatement  : ALTER TABLE film\nADD CONSTRAINT fk_director_id\nFOREIGN KEY director_id\nREFERENCES director(id)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.0.0",
+      "targetSchemaVersion": "2.1.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove director details from film",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V2_1_0__remove_director_details_from_film.sql",
+          "executionTime": 978
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "sxuuxwmi",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:00:29.496865",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "2.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "0.0.0",
+          "description": "initial table",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V0_0_0__initial_table.sql",
+          "executionTime": 857
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V2_0_0__create_director_table.sql",
+          "executionTime": 729
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove director details from film",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V2_1_0__remove_director_details_from_film.sql",
+          "executionTime": 756
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add  foreign key for director to film",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V2_2_0__add_ foreign_key_for_director_to_film.sql",
+          "executionTime": 746
+        }
+      ],
+      "migrationsExecuted": 4,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "sxuuxwmi",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:07:21.692981",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.2.0",
+      "targetSchemaVersion": "3.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create star table",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V3_0_0__create_star_table.sql",
+          "executionTime": 759
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "description": "remove STAR details from film",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V3_1_0__remove_STAR_details_from_film.sql",
+          "executionTime": 823
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "description": "add  foreign key for star to film",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V3_2_0__add_ foreign_key_for_star_to_film.sql",
+          "executionTime": 815
+        }
+      ],
+      "migrationsExecuted": 3,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "sxuuxwmi",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:10:56.947727",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "3.2.0",
+      "targetSchemaVersion": "4.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "description": "create writer table",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V4_0_0__create_writer_table.sql",
+          "executionTime": 738
+        },
+        {
+          "category": "Versioned",
+          "version": "4.1.0",
+          "description": "remove writer details from film",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V4_1_0__remove_writer_details_from_film.sql",
+          "executionTime": 727
+        },
+        {
+          "category": "Versioned",
+          "version": "4.2.0",
+          "description": "add  foreign key for writer to film",
+          "type": "SQL",
+          "filepath": "/Users/h.kitti86/Desktop/Experis/Week9/Day4/exercise/db/migrations/V4_2_0__add_ foreign_key_for_writer_to_film.sql",
+          "executionTime": 732
+        }
+      ],
+      "migrationsExecuted": 3,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "sxuuxwmi",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:12:54.387804",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
