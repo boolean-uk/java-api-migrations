@@ -1,0 +1,2 @@
+ALTER TABLE star
+DROP COLUMN name;
