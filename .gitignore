@@ -35,3 +35,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### User Settings ###
+report.html
+report.json
