@@ -570,6 +570,212 @@
       "operation": "migrate",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.3.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "7.0.0",
+          "description": "extension create persons table and refactor old tables",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V7_0_0__extension_create_persons_table_and_refactor_old_tables.sql",
+          "executionTime": 1156
+        },
+        {
+          "category": "Versioned",
+          "version": "7.0.1",
+          "description": "extension insert data to all tables",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V7_0_1__extension_insert_data_to_all_tables.sql",
+          "executionTime": 752
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:04:44.282420",
+      "operation": "migrate",
+      "exception": "Migration V8_0_0__extnsion_create_casts_table.sql failed\n--------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"FOREIGN\"\n  Position: 157\nLocation   : db/migrations/V8_0_0__extnsion_create_casts_table.sql (C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V8_0_0__extnsion_create_casts_table.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS casts (\r\n    id serial primary key,\r\n    film_id int not null,\r\n    people_id int not null\r\n\r\n    CONSTRAINT fk_film_id\r\n        FOREIGN KEY film_id\r\n            REFERENCES films(id)\r\n\r\n    CONSTRAINT fk_people_id\r\n        FOREIGN KEY people_id\r\n            REFERENCES people(id)\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "7.0.1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:05:36.219772400",
+      "operation": "migrate",
+      "exception": "Migration V8_0_0__extnsion_create_casts_table.sql failed\n--------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"FOREIGN\"\n  Position: 157\nLocation   : db/migrations/V8_0_0__extnsion_create_casts_table.sql (C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V8_0_0__extnsion_create_casts_table.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS casts (\r\n    id serial primary key,\r\n    film_id int not null,\r\n    people_id int not null\r\n\r\n    CONSTRAINT fk_film_id\r\n        FOREIGN KEY (film_id)\r\n            REFERENCES films(id)\r\n\r\n    CONSTRAINT fk_people_id\r\n        FOREIGN KEY (people_id)\r\n            REFERENCES people(id)\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "7.0.1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:07:07.119648100",
+      "operation": "migrate",
+      "exception": "Migration V8_0_0__extnsion_create_casts_table.sql failed\n--------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"FOREIGN\"\n  Position: 157\nLocation   : db/migrations/V8_0_0__extnsion_create_casts_table.sql (C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V8_0_0__extnsion_create_casts_table.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS casts (\r\n    id serial primary key,\r\n    film_id int not null,\r\n    people_id int not null\r\n\r\n    CONSTRAINT fk_film_id\r\n        FOREIGN KEY (film_id)\r\n            REFERENCES films(id)\r\n\r\n    CONSTRAINT fk_people_id\r\n        FOREIGN KEY (people_id)\r\n            REFERENCES actors(people_id)\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "7.0.1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "8.0.0",
+          "description": "extnsion create casts table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V8_0_0__extnsion_create_casts_table.sql",
+          "executionTime": 493
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:07:51.566995100",
+      "operation": "migrate",
+      "exception": "Migration V8_0_1__extension_insert_cast_data.sql failed\n-------------------------------------------------------\nSQL State  : 42703\nError Code : 0\nMessage    : ERROR: column \"actor_id\" of relation \"casts\" does not exist\n  Position: 29\nLocation   : db/migrations/V8_0_1__extension_insert_cast_data.sql (C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V8_0_1__extension_insert_cast_data.sql)\nLine       : 1\nStatement  : insert into casts (film_id, actor_id) (\r\nvalues\r\n(1,2),\r\n(1,3),\r\n(1,4),\r\n(2,3),\r\n(2,4),\r\n(2,5),\r\n(2,6),\r\n(4,5),\r\n(4,6),\r\n(4,7),\r\n(4,8),\r\n(6,7),\r\n(6,8),\r\n(6,9),\r\n(6,10)\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "8.0.1",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "create monolithic films table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V1_0_0__create_monolithic_films_table.sql",
+          "executionTime": 449
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create stars table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V2_0_0__create_stars_table.sql",
+          "executionTime": 440
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create writers table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V3_0_0__create_writers_table.sql",
+          "executionTime": 442
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V4_0_0__create_director_table.sql",
+          "executionTime": 449
+        },
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "description": "normalize films adding FKs",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V5_0_0__normalize_films_adding_FKs.sql",
+          "executionTime": 575
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.0",
+          "description": "insert data to directors",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V6_0_0__insert_data_to_directors.sql",
+          "executionTime": 432
+        },
+        {
+          "category": "Versioned",
+          "version": "6.1.0",
+          "description": "insert data to writers",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V6_1_0__insert_data_to_writers.sql",
+          "executionTime": 426
+        },
+        {
+          "category": "Versioned",
+          "version": "6.2.0",
+          "description": "insert data to stars",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V6_2_0__insert_data_to_stars.sql",
+          "executionTime": 429
+        },
+        {
+          "category": "Versioned",
+          "version": "6.3.0",
+          "description": "insert data to films",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V6_3_0__insert_data_to_films.sql",
+          "executionTime": 427
+        },
+        {
+          "category": "Versioned",
+          "version": "7.0.0",
+          "description": "extension create persons table and refactor old tables",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V7_0_0__extension_create_persons_table_and_refactor_old_tables.sql",
+          "executionTime": 1083
+        },
+        {
+          "category": "Versioned",
+          "version": "7.0.1",
+          "description": "extension insert data to all tables",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V7_0_1__extension_insert_data_to_all_tables.sql",
+          "executionTime": 731
+        },
+        {
+          "category": "Versioned",
+          "version": "8.0.0",
+          "description": "extnsion create casts table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V8_0_0__extnsion_create_casts_table.sql",
+          "executionTime": 444
+        },
+        {
+          "category": "Versioned",
+          "version": "8.0.1",
+          "description": "extension insert cast data",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V8_0_1__extension_insert_cast_data.sql",
+          "executionTime": 429
+        }
+      ],
+      "migrationsExecuted": 13,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:09:40.422965500",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }
