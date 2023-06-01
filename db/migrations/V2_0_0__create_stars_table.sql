@@ -1,5 +1,5 @@
 create table stars (
 id serial primary key,
-name text,
-dob text
+name text not null,
+dob text not null
 )

@@ -151,6 +151,156 @@
       "operation": "migrate",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "create monolithic films table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V1_0_0__create_monolithic_films_table.sql",
+          "executionTime": 482
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create stars table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V2_0_0__create_stars_table.sql",
+          "executionTime": 465
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create writers table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V3_0_0__create_writers_table.sql",
+          "executionTime": 473
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V4_0_0__create_director_table.sql",
+          "executionTime": 471
+        }
+      ],
+      "migrationsExecuted": 4,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:18:46.866741100",
+      "operation": "migrate",
+      "exception": "Migration V5_0_0__normalize_films_adding_FKs.sql failed\n-------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \",\"\n  Position: 98\nLocation   : db/migrations/V5_0_0__normalize_films_adding_FKs.sql (C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V5_0_0__normalize_films_adding_FKs.sql)\nLine       : 1\nStatement  : ALTER TABLE films\r\n\r\nDROP COLUMN director,\r\nDROP COLUMN director_country,\r\nADD COLUMN director_id,\r\n\r\nDROP COLUMN writer,\r\nDROP COLUMN writer_email,\r\nADD COLUMN writer_id,\r\n\r\nDROP COLUMN star,\r\nDROP COLUMN star_dob,\r\nADD COLUMN star_id,\r\n\r\nCONSTRAINT fk_director_id\r\nFOREIGN KEY (director_id)\r\nreferences directors(id),\r\n\r\nCONSTRAINT fk_writer_id\r\nforeign key (writer_id)\r\nreferences writers(id),\r\n\r\nCONSTRAINT fk_stars_id\r\nforeign key (star_id)\r\nreferences stars(id)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "4.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:20:33.348671300",
+      "operation": "migrate",
+      "exception": "Migration V5_0_0__normalize_films_adding_FKs.sql failed\n-------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \",\"\n  Position: 98\nLocation   : db/migrations/V5_0_0__normalize_films_adding_FKs.sql (C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V5_0_0__normalize_films_adding_FKs.sql)\nLine       : 1\nStatement  : ALTER TABLE films\r\n\r\nDROP COLUMN director,\r\nDROP COLUMN director_country,\r\nADD COLUMN director_id,\r\n\r\nDROP COLUMN writer,\r\nDROP COLUMN writer_email,\r\nADD COLUMN writer_id,\r\n\r\nDROP COLUMN star,\r\nDROP COLUMN star_dob,\r\nADD COLUMN star_id,\r\n\r\nADD CONSTRAINT fk_director_id\r\nFOREIGN KEY (director_id)\r\nreferences directors(id),\r\n\r\nADD CONSTRAINT fk_writer_id\r\nforeign key (writer_id)\r\nreferences writers(id),\r\n\r\nADD CONSTRAINT fk_stars_id\r\nforeign key (star_id)\r\nreferences stars(id)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "4.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:24:59.279877300",
+      "operation": "migrate",
+      "exception": "Migration V5_0_0__normalize_films_adding_FKs.sql failed\n-------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \",\"\n  Position: 42\nLocation   : db/migrations/V5_0_0__normalize_films_adding_FKs.sql (C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V5_0_0__normalize_films_adding_FKs.sql)\nLine       : 11\nStatement  : ALTER TABLE films\r\nADD COLUMN director_id,\r\nADD COLUMN writer_id,\r\nADD COLUMN star_id\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "4.0.0",
+      "targetSchemaVersion": "5.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "description": "normalize films adding FKs",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V5_0_0__normalize_films_adding_FKs.sql",
+          "executionTime": 635
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:27:30.367748200",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "5.0.0",
+      "targetSchemaVersion": "6.3.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "6.0.0",
+          "description": "insert data to directors",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V6_0_0__insert_data_to_directors.sql",
+          "executionTime": 474
+        },
+        {
+          "category": "Versioned",
+          "version": "6.1.0",
+          "description": "insert data to writers",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V6_1_0__insert_data_to_writers.sql",
+          "executionTime": 476
+        },
+        {
+          "category": "Versioned",
+          "version": "6.2.0",
+          "description": "insert data to stars",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V6_2_0__insert_data_to_stars.sql",
+          "executionTime": 467
+        },
+        {
+          "category": "Versioned",
+          "version": "6.3.0",
+          "description": "insert data to films",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations\\db\\migrations\\V6_3_0__insert_data_to_films.sql",
+          "executionTime": 470
+        }
+      ],
+      "migrationsExecuted": 4,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:28:05.645416900",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }
