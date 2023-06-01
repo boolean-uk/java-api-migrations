@@ -1,0 +1,346 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:03:53.889485200",
+      "operation": "migrate",
+      "exception": "Migration V1_0_0__intial_table_creation.sql failed\n--------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \")\"\n  Position: 413\nLocation   : db/migrations/V1_0_0__intial_table_creation.sql (D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_0__intial_table_creation.sql)\nLine       : 2\nStatement  : -- | ID | Title | Director | Director Country | Star | Star DOB | Writer | Writer Email | Year | Genre | Score |\r\nCREATE TABLE IF NOT EXISTS films(\r\n    id SERIAL PRIMARY KEY,\r\n    title TEXT NOT NULL,\r\n    director TEXT NOT NULL,\r\n    director_country text,\r\n    star TEXT NOT NULL,\r\n    star_dob text,\r\n    writer TEXT NOT NULL,\r\n    writer_email text,\r\n    year INTEGER,\r\n    genre text,\r\n    score INTEGER,\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:04:32.815904300",
+      "operation": "migrate",
+      "exception": "Migration V1_0_0__intial_table_creation.sql failed\n--------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \")\"\n  Position: 299\nLocation   : db/migrations/V1_0_0__intial_table_creation.sql (D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_0__intial_table_creation.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS films(\r\n    id SERIAL PRIMARY KEY,\r\n    title TEXT NOT NULL,\r\n    director TEXT NOT NULL,\r\n    director_country text,\r\n    star TEXT NOT NULL,\r\n    star_dob text,\r\n    writer TEXT NOT NULL,\r\n    writer_email text,\r\n    year INTEGER,\r\n    genre text,\r\n    score INTEGER,\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "schemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "rawVersion": "1_0_0",
+          "description": "intial table creation",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_0__intial_table_creation.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "1.0.1",
+          "rawVersion": "1_0_1",
+          "description": "normalize create seperate tables",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_1__normalize_create_seperate_tables.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "1.0.2",
+          "rawVersion": "1_0_2",
+          "description": "add contraints",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_2__add_contraints.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "rawVersion": "2_0_0",
+          "description": "insert data",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V2_0_0__insert_data.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        }
+      ],
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "allSchemasEmpty": true,
+      "timestamp": "2023-06-01T13:05:49.134749300",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:06:10.040074200",
+      "operation": "migrate",
+      "exception": "Migration V1_0_0__intial_table_creation.sql failed\n--------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \")\"\n  Position: 299\nLocation   : db/migrations/V1_0_0__intial_table_creation.sql (D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_0__intial_table_creation.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS films(\r\n    id SERIAL PRIMARY KEY,\r\n    title TEXT NOT NULL,\r\n    director TEXT NOT NULL,\r\n    director_country text,\r\n    star TEXT NOT NULL,\r\n    star_dob text,\r\n    writer TEXT NOT NULL,\r\n    writer_email text,\r\n    year INTEGER,\r\n    genre text,\r\n    score INTEGER,\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:06:26.800793700",
+      "operation": "migrate",
+      "exception": "Migration V1_0_0__intial_table_creation.sql failed\n--------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \")\"\n  Position: 299\nLocation   : db/migrations/V1_0_0__intial_table_creation.sql (D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_0__intial_table_creation.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS films(\r\n    id SERIAL PRIMARY KEY,\r\n    title TEXT NOT NULL,\r\n    director TEXT NOT NULL,\r\n    director_country text,\r\n    star TEXT NOT NULL,\r\n    star_dob text,\r\n    writer TEXT NOT NULL,\r\n    writer_email text,\r\n    year INTEGER,\r\n    genre text,\r\n    score INTEGER,\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "intial table creation",
+          "type": "SQL",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_0__intial_table_creation.sql",
+          "executionTime": 322
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:07:52.780468",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.0",
+      "targetSchemaVersion": "1.0.1",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.1",
+          "description": "normalize create seperate tables",
+          "type": "SQL",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_1__normalize_create_seperate_tables.sql",
+          "executionTime": 431
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:08:10.914795300",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:08:29.140553400",
+      "operation": "migrate",
+      "exception": "Migration V1_0_2__add_contraints.sql failed\n-------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"director\"\n  Position: 37\nLocation   : db/migrations/V1_0_2__add_contraints.sql (D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_2__add_contraints.sql)\nLine       : 1\nStatement  : ALTER TABLE\r\n    films DROP COLUMNS director,\r\n    DROP COLUMNS director_country,\r\n    DROP COLUMNS star,\r\n    DROP COLUMNS star_dob,\r\n    DROP COLUMNS writer,\r\n    DROP COLUMNS writer_email\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:10:55.556856900",
+      "operation": "migrate",
+      "exception": "Migration V1_0_2__add_contraints.sql failed\n-------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"director\"\n  Position: 37\nLocation   : db/migrations/V1_0_2__add_contraints.sql (D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_2__add_contraints.sql)\nLine       : 1\nStatement  : ALTER TABLE\r\n    films DROP COLUMNS director,\r\n    DROP COLUMNS director_country,\r\n    DROP COLUMNS star,\r\n    DROP COLUMNS star_dob,\r\n    DROP COLUMNS writer,\r\n    DROP COLUMNS writer_email\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:12:09.974737800",
+      "operation": "migrate",
+      "exception": "Migration V1_0_2__add_contraints.sql failed\n-------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"INTEGER\"\n  Position: 54\nLocation   : db/migrations/V1_0_2__add_contraints.sql (D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_2__add_contraints.sql)\nLine       : 9\nStatement  : ALTER TABLE\r\n    films\r\nADD\r\n    COLUMNS director_id INTEGER,\r\nADD\r\n    COLUMNS star_id INTEGER,\r\nADD\r\n    COLUMNS writer_id INTEGER\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.1",
+      "targetSchemaVersion": "1.0.2",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.2",
+          "description": "add contraints",
+          "type": "SQL",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_2__add_contraints.sql",
+          "executionTime": 416
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:13:14.934233800",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.2",
+      "targetSchemaVersion": "2.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "insert data",
+          "type": "SQL",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V2_0_0__insert_data.sql",
+          "executionTime": 462
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:13:34.139078500",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.3",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "intial table creation",
+          "type": "SQL",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_0__intial_table_creation.sql",
+          "executionTime": 330
+        },
+        {
+          "category": "Versioned",
+          "version": "1.0.1",
+          "description": "normalize create seperate tables",
+          "type": "SQL",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_1__normalize_create_seperate_tables.sql",
+          "executionTime": 441
+        },
+        {
+          "category": "Versioned",
+          "version": "1.0.2",
+          "description": "add contraints",
+          "type": "SQL",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_2__add_contraints.sql",
+          "executionTime": 415
+        },
+        {
+          "category": "Versioned",
+          "version": "1.0.3",
+          "description": "insert data",
+          "type": "SQL",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_0_3__insert_data.sql",
+          "executionTime": 477
+        }
+      ],
+      "migrationsExecuted": 4,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:15:59.631759100",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.3",
+      "targetSchemaVersion": "1.1.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.1.0",
+          "description": "create people table with data",
+          "type": "SQL",
+          "filepath": "D:\\github-clones\\java-classes\\java-api-migrations\\db\\migrations\\V1_1_0__create_people_table_with_data.sql",
+          "executionTime": 345
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "dlombkzl",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:17:29.264155",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
