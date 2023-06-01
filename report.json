@@ -1,0 +1,154 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "initial create monolithic table",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V1_0_0__initial_create_monolithic_table.sql",
+          "executionTime": 606
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:03:25.868134",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.0",
+      "targetSchemaVersion": "2.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_0_0__create_director_table.sql",
+          "executionTime": 592
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:14:42.915706",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:18:32.443483",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.0.0",
+      "targetSchemaVersion": "2.1.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "create star writer tables",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_0__create_star_writer_tables.sql",
+          "executionTime": 705
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:20:39.551517",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.0",
+      "targetSchemaVersion": "2.1.1",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.1",
+          "description": "create film table with foreign keys",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_1__create_film_table_with_foreign_keys.sql",
+          "executionTime": 488
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:23:12.330312",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:30:38.911056",
+      "operation": "migrate",
+      "exception": "Migration V2_1_2__insert_data_into_tables.sql failed\n----------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"INSERT\"\n  Position: 465\nLocation   : db/migrations/V2_1_2__insert_data_into_tables.sql (/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_2__insert_data_into_tables.sql)\nLine       : 1\nStatement  : INSERT INTO Writer (name,email)\nVALUES\n\t(\u0027Arthur C Clarke\u0027,\u0027arthur@clarke.com\u0027),\n\t(\u0027George Lucas\u0027,\u0027george@email.com\u0027),\n\t(\u0027Harper Lee\u0027,\u0027harper@lee.com\u0027),\n\t(\u0027James Cameron\u0027,\u0027james@cameron.com\u0027),\n\t(\u0027Boris Pasternak\u0027,\u0027boris@boris.com\u0027),\n\t(\u0027Frederick Frank\u0027,\u0027fred@frank.com\u0027),\n\t(\u0027Theodoros Angelopoulos\u0027,\u0027theo@angelopoulos.com\u0027),\n\t(\u0027Erik Hazelhoff Roelfzema\u0027,\u0027erik@roelfzema.com\u0027),\n\t(\u0027Krzysztof Kieslowski\u0027,\u0027email@email.com\u0027),\n\t(\u0027Edmond Rostand\u0027,\u0027edmond@rostand.com\u0027)\n\nINSERT INTO Director (name,country)\nVALUES\n\t(\u0027Stanley Kubrick\u0027,\u0027USA\u0027),\n\t(\u0027George Lucas\u0027,\u0027USA\u0027),\n\t(\u0027Robert Mulligan\u0027,\u0027USA\u0027),\n\t(\u0027James Cameron\u0027,\u0027Canada\u0027),\n\t(\u0027David Lean\u0027,\u0027UK\u0027),\n\t(\u0027Anthony Mann\u0027,\u0027USA\u0027),\n\t(\u0027Theodoros Angelopoulos\u0027,\u0027Greece\u0027),\n\t(\u0027Paul Verhoeven\u0027,\u0027Netherlands\u0027),\n\t(\u0027Krzysztof Kieslowski\u0027,\u0027Poland\u0027),\n\t(\u0027Jean-Paul Rappeneau\u0027,\u0027France\u0027)\n\nINSERT INTO Star (name,dob)\nVALUES\n    (\u0027Keir Dullea\u0027, \u00271936-05-30\u0027),\n    (\u0027Mark Hamill\u0027, \u00271951-09-25\u0027),\n    (\u0027Gregory Peck\u0027, \u00271916-04-05\u0027),\n    (\u0027Leonardo DiCaprio\u0027, \u00271974-11-11\u0027),\n    (\u0027Julie Christie\u0027, \u00271940-04-14\u0027),\n    (\u0027Charlton Heston\u0027, \u00271923-10-04\u0027),\n    (\u0027Manos Katrakis\u0027, \u00271908-08-14\u0027),\n    (\u0027Rutger Hauer\u0027, \u00271944-01-23\u0027),\n    (\u0027Juliette Binoche\u0027, \u00271964-03-09\u0027),\n    (\u0027Gerard Depardieu\u0027, \u00271948-12-27\u0027)\n\nINSERT INTO film (title,genre,score,year, director_id, star_id, writer_id)\nVALUES\n\t(\u00272001: A Space Odyssey\u0027,\u0027Science Fiction\u0027,10,1968, 1, 1, 1),\n\t(\u0027Star Wars: A New Hope\u0027,\u0027Science Fiction\u0027,7,1977, 2, 2, 2),\n\t(\u0027To Kill A Mockingbird\u0027,\u0027Drama\u0027,10,1962, 3, 3, 3),\n\t(\u0027Titanic\u0027,\u0027Romance\u0027,5,1997, 4, 4, 4),\n\t(\u0027Dr Zhivago\u0027,\u0027Historical\u0027,8,1965, 5, 5, 5),\n\t(\u0027El Cid\u0027,\u0027Historical\u0027,6,1961, 6, 6, 6),\n\t(\u0027Voyage to Cythera\u0027,\u0027Drama\u0027,8,1984, 7, 7, 7),\n\t(\u0027Soldier of Orange\u0027,\u0027Thriller\u0027,8,1977, 8, 8, 8),\n\t(\u0027Three Colours: Blue\u0027,\u0027Drama\u0027,8,1993, 9, 9, 9),\n\t(\u0027Cyrano de Bergerac\u0027,\u0027Historical\u0027,9,1990, 10, 10, 10)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.1",
+      "targetSchemaVersion": "2.1.2",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.2",
+          "description": "insert data into tables",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_2__insert_data_into_tables.sql",
+          "executionTime": 788
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:32:10.161024",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
