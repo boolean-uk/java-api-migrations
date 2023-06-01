@@ -1,5 +1,5 @@
 CREATE TABLE Films (
-    ID INT PRIMARY KEY,
+    ID SERIAL PRIMARY KEY,
     Title VARCHAR(100) NOT NULL,
     Director VARCHAR(100) NOT NULL,
     Director_Country VARCHAR(100),
