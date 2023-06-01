@@ -1,0 +1,156 @@
+{
+  "individualResults": [
+    {
+      "schemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-06-01T13:32:27.434748800",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:34:58.165351200",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:35:29.166045300",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:38:00.007921100",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:38:35.579624600",
+      "operation": "migrate",
+      "exception": "Migration V1_0_0__create_monolithic_films_table.sql failed\n----------------------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"if\"\n  Position: 20\nLocation   : db/migrations/V1_0_0__create_monolithic_films_table.sql (C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V1_0_0__create_monolithic_films_table.sql)\nLine       : 1\nStatement  : create table films if not exists(\r\nid serial primary key,\r\ntitle text,\r\ndirector text,\r\ndirector_country text,\r\nstar text,\r\nstar_dob text,\r\nwriter text,\r\nwriter_email text,\r\nyear int,\r\ngenre text,\r\nscore int\r\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "create monolithic films table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V1_0_0__create_monolithic_films_table.sql",
+          "executionTime": 495
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:39:19.203859100",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "create monolithic films table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V1_0_0__create_monolithic_films_table.sql",
+          "executionTime": 468
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:42:29.474677",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.0",
+      "targetSchemaVersion": "3.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create stars table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V2_0_0__create_stars_table.sql",
+          "executionTime": 491
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create writers table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\DELL\\boolean\\apis\\java-api-migrations\\db\\migrations\\V3_0_0__create_writers_table.sql",
+          "executionTime": 479
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "luahgrjc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:07:29.205727300",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
