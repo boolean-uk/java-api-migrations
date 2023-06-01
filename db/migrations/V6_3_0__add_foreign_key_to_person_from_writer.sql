@@ -1,0 +1,6 @@
+ALTER TABLE Writers
+DROP COLUMN Name,
+ADD COLUMN Person_ID INT;
+
+ALTER TABLE Writers
+ADD CONSTRAINT fk_person_id FOREIGN KEY (Person_ID) REFERENCES Person (id);
