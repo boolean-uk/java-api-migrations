@@ -1,0 +1,10 @@
+ALTER TABLE Films
+DROP COLUMN Star_ID,
+DROP COLUMN Director_ID,
+DROP COLUMN Writer_ID;
+
+ALTER TABLE Films
+ADD COLUMN Director_ID INT,
+ADD COLUMN Writer_ID INT,
+ADD CONSTRAINT fk_director_id FOREIGN KEY (Director_ID) REFERENCES Person (id),
+ADD CONSTRAINT fk_writer_id FOREIGN KEY (Writer_ID) REFERENCES Person (id);

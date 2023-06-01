@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS Film_Cast (
+    ID SERIAL PRIMARY KEY,
+    Film_ID INT NOT NULL,
+    Actor_ID INT NOT NULL,
+    Star_ID INT NOT NULL,
+
+    CONSTRAINT fk_film_id FOREIGN KEY (Film_ID) REFERENCES Films (id),
+    CONSTRAINT fk_actor_id FOREIGN KEY (Actor_ID) REFERENCES Actors (id),
+    CONSTRAINT fk_star_id FOREIGN KEY (Star_ID) REFERENCES Actors (id)
+);
