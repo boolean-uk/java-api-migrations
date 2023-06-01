@@ -149,6 +149,156 @@
       "operation": "migrate",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.2",
+      "targetSchemaVersion": "2.1.3",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.3",
+          "description": "create person table",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_3__create_person_table.sql",
+          "executionTime": 565
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:56:38.804325",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.3",
+      "targetSchemaVersion": "2.1.4",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.4",
+          "description": "insert data into person table",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_4__insert_data_into_person_table.sql",
+          "executionTime": 486
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T13:58:06.932120",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.4",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:00:28.179922",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.4",
+      "targetSchemaVersion": "2.1.5",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.5",
+          "description": "add person id to writer director star",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_5__add_person_id_to_writer_director_star.sql",
+          "executionTime": 800
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:02:10.124878",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.5",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:06:00.928664",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.5",
+      "targetSchemaVersion": "2.1.6",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.6",
+          "description": "update person id in writer director start",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_6__update_person_id_in_writer_director_start.sql",
+          "executionTime": 734
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:06:53.878679",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.6",
+      "targetSchemaVersion": "2.1.7",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.7",
+          "description": "drop name column in director writer star",
+          "type": "SQL",
+          "filepath": "/Users/farhangjamelyounis/BooleanUk/Java/java-api-migrations/db/migrations/V2_1_7__drop_name_column_in_director_writer_star.sql",
+          "executionTime": 857
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.18.0",
+      "database": "xcjdijkc",
+      "warnings": [],
+      "timestamp": "2023-06-01T14:08:45.481217",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }
