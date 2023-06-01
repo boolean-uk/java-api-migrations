@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS film (
      writer_name TEXT,
      writer_email TEXT,
      genre TEXT,
-     score INT
+     score INT,
+     year INT
 )
 

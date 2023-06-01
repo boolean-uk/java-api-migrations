@@ -214,6 +214,1392 @@
       "operation": "migrate",
       "exception": null,
       "licenseFailed": false
+    },
+    {
+      "schemaVersion": "3.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "rawVersion": "1.0.0",
+          "description": "initial table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:42:53.904554Z",
+          "state": "Missing",
+          "undoable": "No",
+          "filepath": "",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 461
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "rawVersion": "2.0.0",
+          "description": "create record company table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:47:53.637944Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_0_0__create_director_table.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 691
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "rawVersion": "2.1.0",
+          "description": "remove record company details from album",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:47:55.682127Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_1_0__remove_director_details_from_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 610
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "rawVersion": "2.2.0",
+          "description": "add foreign key for record company to album",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:50:48.236282Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_2_0__add_ foreign_key_for_director_to_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 702
+        },
+        {
+          "category": "Versioned",
+          "version": "2.3.0",
+          "rawVersion": "2.3.0",
+          "description": "changed the name of the column in albums from artist to band",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:55:04.053899Z",
+          "state": "Missing",
+          "undoable": "No",
+          "filepath": "",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 432
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "rawVersion": "3.0.0",
+          "description": "create band table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:59:24.813354Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_0_0__create_star_table.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 449
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "rawVersion": "3.1.0",
+          "description": "remove band info from album",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:59:26.182962Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_1_0__remove_STAR_details_from_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 434
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "rawVersion": "3.2.0",
+          "description": "add foreign key for band to album",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T10:03:08.140485Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_2_0__add_ foreign_key_for_star_to_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 452
+        },
+        {
+          "category": "Versioned",
+          "version": "0.0.0",
+          "rawVersion": "0_0_0",
+          "description": "initial table",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Ignored",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V0_0_0__initial_table.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "rawVersion": "4_0_0",
+          "description": "create writer table",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_0_0__create_writer_table.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "4.1.0",
+          "rawVersion": "4_1_0",
+          "description": "remove writer details from film",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_1_0__remove_writer_details_from_film.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "4.2.0",
+          "rawVersion": "4_2_0",
+          "description": "add  foreign key for writer to film",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_2_0__add_ foreign_key_for_writer_to_film.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "rawVersion": "5_0_0",
+          "description": "remove name detail from director",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_0_0__remove_name_detail_from_director.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        }
+      ],
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-06-01T15:43:56.205070695",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "5.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "0.0.0",
+          "description": "initial table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V0_0_0__initial_table.sql",
+          "executionTime": 512
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_0_0__create_director_table.sql",
+          "executionTime": 499
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove director details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_1_0__remove_director_details_from_film.sql",
+          "executionTime": 497
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add  foreign key for director to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_2_0__add_ foreign_key_for_director_to_film.sql",
+          "executionTime": 494
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create star table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_0_0__create_star_table.sql",
+          "executionTime": 532
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "description": "remove STAR details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_1_0__remove_STAR_details_from_film.sql",
+          "executionTime": 486
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "description": "add  foreign key for star to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_2_0__add_ foreign_key_for_star_to_film.sql",
+          "executionTime": 495
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "description": "create writer table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_0_0__create_writer_table.sql",
+          "executionTime": 496
+        },
+        {
+          "category": "Versioned",
+          "version": "4.1.0",
+          "description": "remove writer details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_1_0__remove_writer_details_from_film.sql",
+          "executionTime": 502
+        },
+        {
+          "category": "Versioned",
+          "version": "4.2.0",
+          "description": "add  foreign key for writer to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_2_0__add_ foreign_key_for_writer_to_film.sql",
+          "executionTime": 522
+        },
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "description": "remove name detail from director",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_0_0__remove_name_detail_from_director.sql",
+          "executionTime": 497
+        }
+      ],
+      "migrationsExecuted": 11,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:45:59.208076481",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "5.0.0",
+      "targetSchemaVersion": "5.1.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "5.1.0",
+          "description": "remove name detail from star",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_1_0__remove_name_detail_from_star.sql",
+          "executionTime": 499
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:46:30.467852370",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "5.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "0.0.0",
+          "description": "initial table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V0_0_0__initial_table.sql",
+          "executionTime": 507
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_0_0__create_director_table.sql",
+          "executionTime": 498
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove director details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_1_0__remove_director_details_from_film.sql",
+          "executionTime": 502
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add  foreign key for director to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_2_0__add_ foreign_key_for_director_to_film.sql",
+          "executionTime": 488
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create star table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_0_0__create_star_table.sql",
+          "executionTime": 526
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "description": "remove STAR details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_1_0__remove_STAR_details_from_film.sql",
+          "executionTime": 486
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "description": "add  foreign key for star to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_2_0__add_ foreign_key_for_star_to_film.sql",
+          "executionTime": 489
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "description": "create writer table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_0_0__create_writer_table.sql",
+          "executionTime": 507
+        },
+        {
+          "category": "Versioned",
+          "version": "4.1.0",
+          "description": "remove writer details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_1_0__remove_writer_details_from_film.sql",
+          "executionTime": 489
+        },
+        {
+          "category": "Versioned",
+          "version": "4.2.0",
+          "description": "add  foreign key for writer to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_2_0__add_ foreign_key_for_writer_to_film.sql",
+          "executionTime": 503
+        },
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "description": "create people table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_0_0__create_people_table.sql",
+          "executionTime": 501
+        }
+      ],
+      "migrationsExecuted": 11,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:48:13.300966783",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "5.0.0",
+      "targetSchemaVersion": "5.4.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "5.1.0",
+          "description": "remove name detail from director",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_1_0__remove_name_detail_from_director.sql",
+          "executionTime": 489
+        },
+        {
+          "category": "Versioned",
+          "version": "5.2.0",
+          "description": "remove name detail from star",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_2_0__remove_name_detail_from_star.sql",
+          "executionTime": 493
+        },
+        {
+          "category": "Versioned",
+          "version": "5.3.0",
+          "description": "remove name detail from writer",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_3_0__remove_name_detail_from_writer.sql",
+          "executionTime": 487
+        },
+        {
+          "category": "Versioned",
+          "version": "5.4.0",
+          "description": "add  foreign key for people to director",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_4_0__add_ foreign_key_for_people_to_director.sql",
+          "executionTime": 485
+        }
+      ],
+      "migrationsExecuted": 4,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:52:17.538817377",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "5.4.0",
+      "targetSchemaVersion": "5.6.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "5.5.0",
+          "description": "add  foreign key for people to star",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_5_0__add_ foreign_key_for_people_to_star.sql",
+          "executionTime": 501
+        },
+        {
+          "category": "Versioned",
+          "version": "5.6.0",
+          "description": "add  foreign key for people to writer",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_6_0__add_ foreign_key_for_people_to_writer.sql",
+          "executionTime": 506
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T15:54:26.950095799",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "5.6.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:05:59.548433013",
+      "operation": "migrate",
+      "exception": "Migration V6_0_0__create_casts_table.sql failed\n-----------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"cast\"\n  Position: 28\nLocation   : db/migrations/V6_0_0__create_casts_table.sql (/home/ai/Documents/java-api-migrations/db/migrations/V6_0_0__create_casts_table.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS cast (\n    id SERIAL PRIMARY KEY,\n    film_id INT,\n    person_id INT,\n    CONSTRAINT fk_film_id\n        FOREIGN KEY (film_id)\n            REFERENCES films(id),\n    CONSTRAINT fk_person_id\n        FOREIGN KEY (person_id)\n            REFERENCES people(id)\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "5.6.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:07:35.562162640",
+      "operation": "migrate",
+      "exception": "Migration V6_0_0__create_casts_table.sql failed\n-----------------------------------------------\nSQL State  : 42601\nError Code : 0\nMessage    : ERROR: syntax error at or near \"cast\"\n  Position: 28\nLocation   : db/migrations/V6_0_0__create_casts_table.sql (/home/ai/Documents/java-api-migrations/db/migrations/V6_0_0__create_casts_table.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS cast (\n    id SERIAL PRIMARY KEY,\n    film_id INT,\n    person_id INT,\n    CONSTRAINT fk_film_id\n        FOREIGN KEY (film_id)\n            REFERENCES films(id),\n    CONSTRAINT fk_person_id\n        FOREIGN KEY (person_id)\n            REFERENCES people(id)\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "5.6.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:10:21.358390417",
+      "operation": "migrate",
+      "exception": "Migration V6_0_0__create_casts_table.sql failed\n-----------------------------------------------\nSQL State  : 42P01\nError Code : 0\nMessage    : ERROR: relation \"films\" does not exist\nLocation   : db/migrations/V6_0_0__create_casts_table.sql (/home/ai/Documents/java-api-migrations/db/migrations/V6_0_0__create_casts_table.sql)\nLine       : 1\nStatement  : CREATE TABLE IF NOT EXISTS casts (\n    id SERIAL PRIMARY KEY,\n    film_id INT,\n    person_id INT,\n    CONSTRAINT fk_film_id\n        FOREIGN KEY (film_id)\n            REFERENCES films(id),\n    CONSTRAINT fk_person_id\n        FOREIGN KEY (person_id)\n            REFERENCES people(id)\n)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "5.6.0",
+      "targetSchemaVersion": "6.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "6.0.0",
+          "description": "create casts table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_0__create_casts_table.sql",
+          "executionTime": 591
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:10:37.440672441",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "schemaVersion": "6.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "0.0.0",
+          "rawVersion": "0.0.0",
+          "description": "initial table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:17.551303Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V0_0_0__initial_table.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 507
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "rawVersion": "2.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:19.153434Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_0_0__create_director_table.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 498
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "rawVersion": "2.1.0",
+          "description": "remove director details from film",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:20.634601Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_1_0__remove_director_details_from_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 502
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "rawVersion": "2.2.0",
+          "description": "add  foreign key for director to film",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:22.124274Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_2_0__add_ foreign_key_for_director_to_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 488
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "rawVersion": "3.0.0",
+          "description": "create star table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:23.601872Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_0_0__create_star_table.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 526
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "rawVersion": "3.1.0",
+          "description": "remove STAR details from film",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:25.118554Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_1_0__remove_STAR_details_from_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 486
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "rawVersion": "3.2.0",
+          "description": "add  foreign key for star to film",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:26.589124Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_2_0__add_ foreign_key_for_star_to_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 489
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "rawVersion": "4.0.0",
+          "description": "create writer table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:28.065142Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_0_0__create_writer_table.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 507
+        },
+        {
+          "category": "Versioned",
+          "version": "4.1.0",
+          "rawVersion": "4.1.0",
+          "description": "remove writer details from film",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:29.554842Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_1_0__remove_writer_details_from_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 489
+        },
+        {
+          "category": "Versioned",
+          "version": "4.2.0",
+          "rawVersion": "4.2.0",
+          "description": "add  foreign key for writer to film",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:31.021545Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_2_0__add_ foreign_key_for_writer_to_film.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 503
+        },
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "rawVersion": "5.0.0",
+          "description": "create people table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:48:32.506446Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_0_0__create_people_table.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 501
+        },
+        {
+          "category": "Versioned",
+          "version": "5.1.0",
+          "rawVersion": "5.1.0",
+          "description": "remove name detail from director",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:52:20.701178Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_1_0__remove_name_detail_from_director.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 489
+        },
+        {
+          "category": "Versioned",
+          "version": "5.2.0",
+          "rawVersion": "5.2.0",
+          "description": "remove name detail from star",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:52:22.211718Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_2_0__remove_name_detail_from_star.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 493
+        },
+        {
+          "category": "Versioned",
+          "version": "5.3.0",
+          "rawVersion": "5.3.0",
+          "description": "remove name detail from writer",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:52:23.612266Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_3_0__remove_name_detail_from_writer.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 487
+        },
+        {
+          "category": "Versioned",
+          "version": "5.4.0",
+          "rawVersion": "5.4.0",
+          "description": "add  foreign key for people to director",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:52:25.011493Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_4_0__add_ foreign_key_for_people_to_director.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 485
+        },
+        {
+          "category": "Versioned",
+          "version": "5.5.0",
+          "rawVersion": "5.5.0",
+          "description": "add  foreign key for people to star",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:54:30.211629Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_5_0__add_ foreign_key_for_people_to_star.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 501
+        },
+        {
+          "category": "Versioned",
+          "version": "5.6.0",
+          "rawVersion": "5.6.0",
+          "description": "add  foreign key for people to writer",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T12:54:31.783363Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_6_0__add_ foreign_key_for_people_to_writer.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 506
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.0",
+          "rawVersion": "6.0.0",
+          "description": "create casts table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T13:10:40.750453Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_0__create_casts_table.sql",
+          "undoFilepath": "",
+          "installedBy": "puxmwykr",
+          "executionTime": 591
+        },
+        {
+          "category": "Versioned",
+          "version": "0.0.1",
+          "rawVersion": "0_0_1",
+          "description": "insert data to tables",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Ignored",
+          "undoable": "No",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V0_0_1__insert_data_to_tables.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        }
+      ],
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-06-01T16:10:57.752813053",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:12:57.640354196",
+      "operation": "migrate",
+      "exception": "Migration V6_0_1__insert_data_to_tables.sql failed\n--------------------------------------------------\nSQL State  : 42P01\nError Code : 0\nMessage    : ERROR: relation \"directors\" does not exist\n  Position: 13\nLocation   : db/migrations/V6_0_1__insert_data_to_tables.sql (/home/ai/Documents/java-api-migrations/db/migrations/V6_0_1__insert_data_to_tables.sql)\nLine       : 31\nStatement  : insert into directors\n    (people_id, country)\nvalues\n    (1, \u0027USA\u0027),\n    (2, \u0027USA\u0027),\n    (3, \u0027USA\u0027),\n    (21, \u0027Canada\u0027),\n    (4, \u0027UK\u0027),\n    (5, \u0027USA\u0027),\n    (6, \u0027Greece\u0027),\n    (7, \u0027Netherlands\u0027),\n    (25, \u0027Poland\u0027),\n    (8, \u0027France\u0027)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:14:17.036657511",
+      "operation": "migrate",
+      "exception": "Migration V6_0_1__insert_data_to_tables.sql failed\n--------------------------------------------------\nSQL State  : 42703\nError Code : 0\nMessage    : ERROR: column \"people_id\" of relation \"director\" does not exist\n  Position: 27\nLocation   : db/migrations/V6_0_1__insert_data_to_tables.sql (/home/ai/Documents/java-api-migrations/db/migrations/V6_0_1__insert_data_to_tables.sql)\nLine       : 31\nStatement  : insert into director\n    (people_id, country)\nvalues\n    (1, \u0027USA\u0027),\n    (2, \u0027USA\u0027),\n    (3, \u0027USA\u0027),\n    (21, \u0027Canada\u0027),\n    (4, \u0027UK\u0027),\n    (5, \u0027USA\u0027),\n    (6, \u0027Greece\u0027),\n    (7, \u0027Netherlands\u0027),\n    (25, \u0027Poland\u0027),\n    (8, \u0027France\u0027)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:14:45.624687763",
+      "operation": "migrate",
+      "exception": "Migration V6_0_1__insert_data_to_tables.sql failed\n--------------------------------------------------\nSQL State  : 23503\nError Code : 0\nMessage    : ERROR: insert or update on table \"director\" violates foreign key constraint \"fk_person_id\"\n  Detail: Key (person_id)\u003d(1) is not present in table \"people\".\nLocation   : db/migrations/V6_0_1__insert_data_to_tables.sql (/home/ai/Documents/java-api-migrations/db/migrations/V6_0_1__insert_data_to_tables.sql)\nLine       : 31\nStatement  : insert into director\n    (person_id, country)\nvalues\n    (1, \u0027USA\u0027),\n    (2, \u0027USA\u0027),\n    (3, \u0027USA\u0027),\n    (21, \u0027Canada\u0027),\n    (4, \u0027UK\u0027),\n    (5, \u0027USA\u0027),\n    (6, \u0027Greece\u0027),\n    (7, \u0027Netherlands\u0027),\n    (25, \u0027Poland\u0027),\n    (8, \u0027France\u0027)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.0.0",
+      "targetSchemaVersion": "6.0.1",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "6.0.1",
+          "description": "insert data to tables",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_1__insert_data_to_tables.sql",
+          "executionTime": 501
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:16:31.178529279",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "6.0.2",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "0.0.0",
+          "description": "initial table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V0_0_0__initial_table.sql",
+          "executionTime": 525
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_0_0__create_director_table.sql",
+          "executionTime": 464
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove director details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_1_0__remove_director_details_from_film.sql",
+          "executionTime": 558
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add  foreign key for director to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_2_0__add_ foreign_key_for_director_to_film.sql",
+          "executionTime": 502
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create star table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_0_0__create_star_table.sql",
+          "executionTime": 506
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "description": "remove STAR details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_1_0__remove_STAR_details_from_film.sql",
+          "executionTime": 489
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "description": "add  foreign key for star to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_2_0__add_ foreign_key_for_star_to_film.sql",
+          "executionTime": 580
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "description": "create writer table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_0_0__create_writer_table.sql",
+          "executionTime": 461
+        },
+        {
+          "category": "Versioned",
+          "version": "4.1.0",
+          "description": "remove writer details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_1_0__remove_writer_details_from_film.sql",
+          "executionTime": 485
+        },
+        {
+          "category": "Versioned",
+          "version": "4.2.0",
+          "description": "add  foreign key for writer to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_2_0__add_ foreign_key_for_writer_to_film.sql",
+          "executionTime": 580
+        },
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "description": "create people table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_0_0__create_people_table.sql",
+          "executionTime": 554
+        },
+        {
+          "category": "Versioned",
+          "version": "5.1.0",
+          "description": "remove name detail from director",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_1_0__remove_name_detail_from_director.sql",
+          "executionTime": 508
+        },
+        {
+          "category": "Versioned",
+          "version": "5.2.0",
+          "description": "remove name detail from star",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_2_0__remove_name_detail_from_star.sql",
+          "executionTime": 481
+        },
+        {
+          "category": "Versioned",
+          "version": "5.3.0",
+          "description": "remove name detail from writer",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_3_0__remove_name_detail_from_writer.sql",
+          "executionTime": 478
+        },
+        {
+          "category": "Versioned",
+          "version": "5.4.0",
+          "description": "add  foreign key for people to director",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_4_0__add_ foreign_key_for_people_to_director.sql",
+          "executionTime": 465
+        },
+        {
+          "category": "Versioned",
+          "version": "5.5.0",
+          "description": "add  foreign key for people to star",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_5_0__add_ foreign_key_for_people_to_star.sql",
+          "executionTime": 491
+        },
+        {
+          "category": "Versioned",
+          "version": "5.6.0",
+          "description": "add  foreign key for people to writer",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_6_0__add_ foreign_key_for_people_to_writer.sql",
+          "executionTime": 490
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.0",
+          "description": "create casts table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_0__create_casts_table.sql",
+          "executionTime": 524
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.1",
+          "description": "insert people data",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_1__insert_people_data.sql",
+          "executionTime": 455
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.2",
+          "description": "insert director data",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_2__insert_director_data.sql",
+          "executionTime": 458
+        }
+      ],
+      "migrationsExecuted": 20,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:18:24.358968275",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.0.2",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:23:32.788673400",
+      "operation": "migrate",
+      "exception": "Migration V6_0_3__insert_star_data .sql failed\n----------------------------------------------\nSQL State  : 42703\nError Code : 0\nMessage    : ERROR: column \"date_of_birth\" of relation \"star\" does not exist\n  Position: 34\nLocation   : db/migrations/V6_0_3__insert_star_data .sql (/home/ai/Documents/java-api-migrations/db/migrations/V6_0_3__insert_star_data .sql)\nLine       : 1\nStatement  : insert into star\n    (person_id, date_of_birth)\nvalues\n    (9, \u00271936-05-30\u0027),\n    (10, \u00271951-09-25\u0027),\n    (11, \u00271916-04-05\u0027),\n    (12, \u00271974-11-11\u0027),\n    (13, \u00271940-04-13\u0027),\n    (14, \u00271908-08-14\u0027),\n    (15, \u00271944-01-23\u0027),\n    (15, \u00271944-01-23\u0027),\n    (16, \u00271964-03-09\u0027),\n    (17, \u00271948-12-27\u0027)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.0.2",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "6.0.3",
+          "description": "insert star data ",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_3__insert_star_data .sql",
+          "executionTime": 483
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.4",
+          "description": "insert writer data ",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_4__insert_writer_data .sql",
+          "executionTime": 476
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.5",
+          "description": "insert more people data ",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_5__insert_more_people_data .sql",
+          "executionTime": 477
+        }
+      ],
+      "migrationsExecuted": 3,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:24:13.329463805",
+      "operation": "migrate",
+      "exception": "Migration V6_0_6__insert_casts_data .sql failed\n-----------------------------------------------\nSQL State  : 23503\nError Code : 0\nMessage    : ERROR: insert or update on table \"casts\" violates foreign key constraint \"fk_film_id\"\n  Detail: Key (film_id)\u003d(1) is not present in table \"film\".\nLocation   : db/migrations/V6_0_6__insert_casts_data .sql (/home/ai/Documents/java-api-migrations/db/migrations/V6_0_6__insert_casts_data .sql)\nLine       : 1\nStatement  : insert into casts\n    (film_id, person_id)\nvalues\n    (1, 1),\n    (1, 2),\n    (1, 3),\n    (2, 4),\n    (2, 5),\n    (2, 6),\n    (3, 7),\n    (3, 8),\n    (4, 9),\n    (5, 10),\n    (6, 3),\n    (6, 4),\n    (7, 1),\n    (8, 2),\n    (8, 3),\n    (8, 4),\n    (9, 7),\n    (9, 8),\n    (9, 5),\n    (9, 6),\n    (9, 10),\n    (10, 9),\n    (10, 8),\n    (10, 2)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "6.0.5",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:26:00.258906419",
+      "operation": "migrate",
+      "exception": "Migration V6_0_6__insert_films_data .sql failed\n-----------------------------------------------\nSQL State  : 42703\nError Code : 0\nMessage    : ERROR: column \"year\" of relation \"film\" does not exist\n  Position: 44\nLocation   : db/migrations/V6_0_6__insert_films_data .sql (/home/ai/Documents/java-api-migrations/db/migrations/V6_0_6__insert_films_data .sql)\nLine       : 1\nStatement  : insert into film\n    (title, genre, score, year, star_id, director_id, writer_id)\nvalues\n(\u00272001: A Space Odyssey\u0027, \u0027Science Fiction\u0027, 10, 1968, 1, 1, 1),\n(\u0027Star Wars: A New Hope\u0027, \u0027Science Fiction\u0027, 7, 1977, 2, 2, 2),\n(\u0027To Kill A Mockingbird\u0027, \u0027Drama\u0027, 10, 1962, 3, 3, 3),\n(\u0027Titanic\u0027, \u0027Romance\u0027, 5, 1997, 4, 4, 4),\n(\u0027Dr Zhivago\u0027, \u0027Historical\u0027, 8, 1965, 5, 5, 5),\n(\u0027El Cid\u0027, \u0027Historical\u0027, 6, 1961, 6, 6, 6),\n(\u0027Voyage to Cythera\u0027, \u0027Drama\u0027, 8, 1984, 7, 7, 7),\n(\u0027Soldier of Orange\u0027, \u0027Thriller\u0027, 8, 1977, 8, 8, 8),\n(\u0027Three Colours: Blue\u0027, \u0027Drama\u0027, 8, 1993, 9, 9, 9),\n(\u0027Cyrano de Bergerac\u0027, \u0027Historical\u0027, 9, 1990, 10, 10, 10)\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "6.0.7",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "0.0.0",
+          "description": "initial table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V0_0_0__initial_table.sql",
+          "executionTime": 461
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create director table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_0_0__create_director_table.sql",
+          "executionTime": 468
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove director details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_1_0__remove_director_details_from_film.sql",
+          "executionTime": 449
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add  foreign key for director to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V2_2_0__add_ foreign_key_for_director_to_film.sql",
+          "executionTime": 454
+        },
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create star table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_0_0__create_star_table.sql",
+          "executionTime": 463
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "description": "remove STAR details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_1_0__remove_STAR_details_from_film.sql",
+          "executionTime": 448
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "description": "add  foreign key for star to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V3_2_0__add_ foreign_key_for_star_to_film.sql",
+          "executionTime": 447
+        },
+        {
+          "category": "Versioned",
+          "version": "4.0.0",
+          "description": "create writer table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_0_0__create_writer_table.sql",
+          "executionTime": 500
+        },
+        {
+          "category": "Versioned",
+          "version": "4.1.0",
+          "description": "remove writer details from film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_1_0__remove_writer_details_from_film.sql",
+          "executionTime": 438
+        },
+        {
+          "category": "Versioned",
+          "version": "4.2.0",
+          "description": "add  foreign key for writer to film",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V4_2_0__add_ foreign_key_for_writer_to_film.sql",
+          "executionTime": 454
+        },
+        {
+          "category": "Versioned",
+          "version": "5.0.0",
+          "description": "create people table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_0_0__create_people_table.sql",
+          "executionTime": 454
+        },
+        {
+          "category": "Versioned",
+          "version": "5.1.0",
+          "description": "remove name detail from director",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_1_0__remove_name_detail_from_director.sql",
+          "executionTime": 441
+        },
+        {
+          "category": "Versioned",
+          "version": "5.2.0",
+          "description": "remove name detail from star",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_2_0__remove_name_detail_from_star.sql",
+          "executionTime": 442
+        },
+        {
+          "category": "Versioned",
+          "version": "5.3.0",
+          "description": "remove name detail from writer",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_3_0__remove_name_detail_from_writer.sql",
+          "executionTime": 469
+        },
+        {
+          "category": "Versioned",
+          "version": "5.4.0",
+          "description": "add  foreign key for people to director",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_4_0__add_ foreign_key_for_people_to_director.sql",
+          "executionTime": 450
+        },
+        {
+          "category": "Versioned",
+          "version": "5.5.0",
+          "description": "add  foreign key for people to star",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_5_0__add_ foreign_key_for_people_to_star.sql",
+          "executionTime": 468
+        },
+        {
+          "category": "Versioned",
+          "version": "5.6.0",
+          "description": "add  foreign key for people to writer",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V5_6_0__add_ foreign_key_for_people_to_writer.sql",
+          "executionTime": 443
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.0",
+          "description": "create casts table",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_0__create_casts_table.sql",
+          "executionTime": 482
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.1",
+          "description": "insert people data",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_1__insert_people_data.sql",
+          "executionTime": 483
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.2",
+          "description": "insert director data",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_2__insert_director_data.sql",
+          "executionTime": 445
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.3",
+          "description": "insert star data ",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_3__insert_star_data .sql",
+          "executionTime": 447
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.4",
+          "description": "insert writer data ",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_4__insert_writer_data .sql",
+          "executionTime": 436
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.5",
+          "description": "insert more people data ",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_5__insert_more_people_data .sql",
+          "executionTime": 442
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.6",
+          "description": "insert films data ",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_6__insert_films_data .sql",
+          "executionTime": 437
+        },
+        {
+          "category": "Versioned",
+          "version": "6.0.7",
+          "description": "insert casts data ",
+          "type": "SQL",
+          "filepath": "/home/ai/Documents/java-api-migrations/db/migrations/V6_0_7__insert_casts_data .sql",
+          "executionTime": 446
+        }
+      ],
+      "migrationsExecuted": 25,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "puxmwykr",
+      "warnings": [],
+      "timestamp": "2023-06-01T16:27:28.829822501",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
     }
   ]
 }
