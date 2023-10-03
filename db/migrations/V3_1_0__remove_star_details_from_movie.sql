@@ -1,0 +1,5 @@
+ALTER TABLE movie
+DROP COLUMN star_name;
+
+ALTER TABLE movie
+DROP COLUMN star_DOB;
