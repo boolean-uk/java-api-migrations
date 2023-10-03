@@ -35,3 +35,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+flyway.conf
+report.html
+report.json
