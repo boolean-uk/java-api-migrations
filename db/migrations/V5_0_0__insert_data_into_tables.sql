@@ -1,5 +1,5 @@
 INSERT INTO Directors (name, country)
-VALUES (
+VALUES
    ('Stanley Kubrick', 'USA'),
    ('George Lucas', 'USA'),
    ('Robert Mulligan', 'USA'),
@@ -10,7 +10,7 @@ VALUES (
    ('Paul Verhoeven', 'Netherlands'),
    ('Krzysztof Kieslowski', 'Poland'),
    ('Jean-Paul Rappeneau', 'France')
-);
+;
 
 INSERT INTO Stars (name, dob)
 VALUES
@@ -24,7 +24,7 @@ VALUES
   ('Rutger Hauer', '23/01/1944'),
   ('Juliette Binoche', '09/03/1964'),
   ('Gerard Depardieu', '27/12/1948')
-);
+;
 
 INSERT INTO Writers (name, email)
 VALUES
@@ -38,7 +38,7 @@ VALUES
   ('Erik Hazelhoff Roelfzema', 'erik@roelfzema.com'),
   ('Krzysztof Kieslowski', 'email@email.com'),
   ('Edmond Rostand', 'edmond@rostand.com')
-);
+;
 
 INSERT INTO Films (title, year, genre, score, director_id, star_id, writer_id)
 VALUES
@@ -52,4 +52,4 @@ VALUES
   ('Soldier of Orange', 1977, 'Thriller', 8, 8, 8, 8),
   ('Three Colours: Blue', 1993, 'Drama', 8, 9, 9, 9),
   ('Cyrano de Bergerac', 1990, 'Historical', 9, 10, 10, 10)
-);
+  ;

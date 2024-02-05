@@ -10,5 +10,5 @@ CREATE TABLE IF NOT EXISTS Films(
   year INT,
   genre TEXT,
   score INT,
-  UNIQUE(title),
+  UNIQUE(title)
 );
