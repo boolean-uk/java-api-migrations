@@ -34,7 +34,7 @@ INSERT INTO Director (name, country) VALUES
   ('Krzysztof Kieslowski', 'Poland'),
   ('Jean-Paul Rappeneau', 'France');
 
-INSERT INTO Film (title, year, genre, score, writer_id, star_id, director_id)
+INSERT INTO Films (title, year, genre, score, writer_id, star_id, director_id)
 VALUES
   ('2001: A Space Odyssey', 1968, 'Science Fiction', 10, (SELECT id FROM Writer WHERE name = 'Arthur C Clarke'), (SELECT id FROM Star WHERE name = 'Keir Dullea'), (SELECT id FROM Director WHERE name = 'Stanley Kubrick')),
   ('Star Wars: A New Hope', 1977, 'Science Fiction', 7, (SELECT id FROM Writer WHERE name = 'George Lucas'), (SELECT id FROM Star WHERE name = 'Mark Hamill'), (SELECT id FROM Director WHERE name = 'George Lucas')),
