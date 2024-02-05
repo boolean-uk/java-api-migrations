@@ -1,0 +1,5 @@
+ALTER TABLE Movies
+ADD COLUMN Director_ID INT;
+
+ALTER TABLE Movies
+ADD CONSTRAINT fk_Director_ID FOREIGN KEY (Director_ID) REFERENCES Movies (id);
