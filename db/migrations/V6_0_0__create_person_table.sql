@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS Person(
+id SERIAL PRIMARY KEY,
+name TEXT,
+country TEXT,
+dob TEXT,
+email TEXT
+);
