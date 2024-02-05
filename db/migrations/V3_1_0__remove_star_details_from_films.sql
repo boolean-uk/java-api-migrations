@@ -1,0 +1,3 @@
+ALTER TABLE Film
+DROP COLUMN star,
+DROP COLUMN star_dob;
