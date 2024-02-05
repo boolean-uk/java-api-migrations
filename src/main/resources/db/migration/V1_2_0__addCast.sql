@@ -1,16 +1,23 @@
 TRUNCATE TABLE film;
-TRUNCATE TABLE star;
-TRUNCATE TABLE writer;
-TRUNCATE TABLE director;
+TRUNCATE TABLE writer CASCADE;
+TRUNCATE TABLE star CASCADE;
+TRUNCATE TABLE director CASCADE;
 
-CREATE TABLE IF NOT EXISTS Cast (
-    castId serial,
-    starId int
+
+
+CREATE TABLE IF NOT EXISTS CastTable (
+    castId serial ,
+    starId int,
+    PRIMARY KEY(castId)
 );
 
 
 ALTER TABLE film
-ADD COLUMN castId int
+ADD COLUMN castId int;
+
 
 ALTER TABLE film
-ADD CONSTRAINT castId FOREIGN KEY (castId) REFERENCES Cast (castId);
+ADD CONSTRAINT castId FOREIGN KEY (castId) REFERENCES CastTable (castId);
+
+
+
