@@ -5,19 +5,22 @@ TRUNCATE TABLE director CASCADE;
 
 
 
+CREATE TABLE IF NOT EXISTS Actor (
+    actorId serial ,
+    peopleId int,
+    PRIMARY KEY(actorId)
+);
+
+
 CREATE TABLE IF NOT EXISTS CastTable (
-    castId serial ,
-    starId int,
+    castId serial,
+    filmId int,
+    actorId int,
     PRIMARY KEY(castId)
 );
 
 
-ALTER TABLE film
-ADD COLUMN castId int;
 
-
-ALTER TABLE film
-ADD CONSTRAINT castId FOREIGN KEY (castId) REFERENCES CastTable (castId);
 
 
 
