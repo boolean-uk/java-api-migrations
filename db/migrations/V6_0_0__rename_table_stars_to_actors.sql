@@ -1,0 +1,2 @@
+ALTER TABLE stars
+RENAME TO actors;
