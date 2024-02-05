@@ -1,0 +1,2 @@
+DELETE FROM Films;
+DELETE FROM People;
