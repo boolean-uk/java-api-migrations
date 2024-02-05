@@ -1,3 +1,3 @@
 ALTER TABLE movies
 DROP COLUMN star,
-DROP COLUMN star_DOB;
+DROP COLUMN star_dob;
