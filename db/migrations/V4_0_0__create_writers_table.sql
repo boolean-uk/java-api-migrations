@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS(
+    id SERIAL PRIMARY KEY,
+    name TEXT,
+    email TEXT
+);
