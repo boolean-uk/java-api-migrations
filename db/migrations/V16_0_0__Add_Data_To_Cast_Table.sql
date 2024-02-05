@@ -1,5 +1,5 @@
 
-INSERT INTO Cast (MovieID, ActorID) VALUES
+INSERT INTO "Cast" (MovieID, ActorID) VALUES
     (1, 11),
     (1, 12),
     (2, 13),
