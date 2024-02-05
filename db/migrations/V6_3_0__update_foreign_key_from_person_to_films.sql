@@ -1,12 +1,3 @@
-ALTER TABLE Films
-ADD COLUMN director_id INT;
-
-ALTER TABLE Films
-ADD COLUMN star_id INT;
-
-ALTER TABLE Films
-ADD COLUMN writer_id INT;
-
 UPDATE Films
  SET director_id = 1, star_id = 11, writer_id = 21
   WHERE id = 1;
