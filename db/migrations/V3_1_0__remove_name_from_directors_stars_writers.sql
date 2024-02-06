@@ -1,0 +1,8 @@
+ALTER TABLE directors
+DROP COLUMN name;
+
+ALTER TABLE stars
+DROP COLUMN name;
+
+ALTER TABLE writers
+DROP COLUMN name;
