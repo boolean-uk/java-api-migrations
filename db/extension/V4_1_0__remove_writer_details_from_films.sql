@@ -1,0 +1,3 @@
+ALTER TABLE Films
+DROP COLUMN writer,
+DROP COLUMN writerEmail;
