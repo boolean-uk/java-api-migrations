@@ -10,4 +10,4 @@ CREATE TABLE IF NOT EXISTS film (
     year INT,
     genre TEXT,
     score INT
-)
+);
