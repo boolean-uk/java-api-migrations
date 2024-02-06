@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Directors (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    country VARCHAR(255) NOT NULL
+);
