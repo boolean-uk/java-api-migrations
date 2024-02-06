@@ -1,0 +1,5 @@
+CREATE TABLE Stars(
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  DOB date
+);
