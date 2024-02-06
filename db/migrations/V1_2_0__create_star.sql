@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS Star(
+    id SERIAL PRIMARY KEY NOT NULL,
+    name TEXT,
+    country_of_origin TEXT
+);
+
+ALTER TABLE Movies
+DROP COLUMN IF EXISTS star_country_of_origin,
+DROP COLUMN IF EXISTS star_id,
+DROP COLUMN IF EXISTS star;
+
+ALTER TABLE Movies
+ADD COLUMN IF NOT EXISTS star_id BIGINT(20) unsigned;
+
+ALTER TABLE Movies
+ADD FOREIGN KEY IF NOT EXISTS (star_id) REFERENCES Star(id);
