@@ -20,3 +20,4 @@ ADD COLUMN IF NOT EXISTS director_id BIGINT(20) unsigned;
 
 ALTER TABLE Movies
 ADD FOREIGN KEY IF NOT EXISTS (director_id) REFERENCES Director(id);
+
