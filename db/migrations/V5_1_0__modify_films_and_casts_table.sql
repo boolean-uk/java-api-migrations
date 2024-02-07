@@ -1,0 +1,24 @@
+ALTER TABLE Films
+DROP CONSTRAINT IF EXISTS fk_director_id;
+
+ALTER TABLE Films
+DROP CONSTRAINT IF EXISTS fk_writer_id;
+
+ALTER TABLE Casts
+DROP CONSTRAINT IF EXISTS fk_person_id;
+
+
+ALTER TABLE Films
+ADD CONSTRAINT fk_director_id FOREIGN KEY (director_id) REFERENCES People(id);
+
+ALTER TABLE Films
+ADD CONSTRAINT fk_writer_id FOREIGN KEY (writer_id) REFERENCES People(id);
+
+ALTER TABLE Casts
+ADD CONSTRAINT fk_person_id FOREIGN KEY (person_id) REFERENCES People(id);
+
+
+ALTER TABLE Films
+DROP COLUMN IF EXISTS director_name,
+DROP COLUMN IF EXISTS writer_name,
+DROP COLUMN IF EXISTS star_name;
