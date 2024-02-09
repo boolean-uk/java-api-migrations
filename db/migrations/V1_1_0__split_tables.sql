@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS Directors(
+  id SERIAL PRIMARY KEY,
+  name TEXT,
+  country TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Stars(
+  id SERIAL PRIMARY KEY,
+  name TEXT,
+  DOB TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Writers(
+  id SERIAL PRIMARY KEY,
+  name TEXT,
+  email TEXT
+);

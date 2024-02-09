@@ -11,7 +11,6 @@ public class User {
     @Id
     @GeneratedValue
     private int id;
-
     private String username;
     private String email;
     private String firstName;
