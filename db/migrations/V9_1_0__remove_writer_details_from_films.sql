@@ -1,0 +1,2 @@
+ALTER TABLE Films
+DROP COLUMN writer_id
