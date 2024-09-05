@@ -1,4 +1,4 @@
-CREATE TABLE films_monolith(
+CREATE TABLE films(
   id SERIAL PRIMARY KEY,
   title TEXT NOT NULL,
   release_year INTEGER NOT NULL,

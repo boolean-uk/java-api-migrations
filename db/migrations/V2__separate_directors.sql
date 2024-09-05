@@ -4,7 +4,7 @@ CREATE TABLE directors(
   country TEXT NOT NULL
 );
 
-ALTER TABLE films_monolith
+ALTER TABLE films
 DROP COLUMN director_name,
 DROP COLUMN director_country,
-ADD COLUMN director_id INTEGER REFERENCES directors(id),
+ADD COLUMN director_id INTEGER REFERENCES directors(id);
