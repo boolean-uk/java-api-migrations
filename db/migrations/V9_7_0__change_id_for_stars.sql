@@ -1,0 +1,10 @@
+ALTER TABLE Stars
+DROP COLUMN id,
+DROP COLUMN name,
+ADD COLUMN id INTEGER;
+TRUNCATE TABLE Stars;
+
+ALTER TABLE Stars
+ADD CONSTRAINT fk_person_id
+    FOREIGN KEY(id)
+        REFERENCES person(id);
