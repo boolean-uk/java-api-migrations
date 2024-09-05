@@ -1,0 +1,7 @@
+ALTER TABLE MOVIES
+ADD COLUMN writer_id INTEGER;
+
+ALTER TABLE MOVIES
+ADD CONSTRAINT fk_writer_id
+    FOREIGN KEY (writer_id)
+        REFERENCES writers(id);
