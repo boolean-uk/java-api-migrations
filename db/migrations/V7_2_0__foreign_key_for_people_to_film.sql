@@ -1,0 +1,4 @@
+ALTER TABLE film
+ADD COLUMN director_id INTEGER REFERENCES people(id),
+ADD COLUMN star_id INTEGER REFERENCES people(id),
+ADD COLUMN writer_id INTEGER REFERENCES people(id);
