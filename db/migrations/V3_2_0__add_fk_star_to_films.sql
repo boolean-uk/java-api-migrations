@@ -1,0 +1,7 @@
+ALTER TABLE films
+ADD COLUMN starId INTEGER;
+
+ALTER TABLE films
+ADD CONSTRAINT fkStar
+		FOREIGN KEY(starId)
+			REFERENCES stars(id);
