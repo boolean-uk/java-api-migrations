@@ -1,0 +1,11 @@
+ALTER TABLE Directors
+DROP COLUMN name,
+DROP COLUMN country;
+
+ALTER TABLE Stars
+DROP COLUMN name,
+DROP COLUMN dob;
+
+ALTER TABLE Writers
+DROP COLUMN name,
+DROP COLUMN email;
