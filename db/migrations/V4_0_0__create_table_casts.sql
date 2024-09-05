@@ -1,0 +1,5 @@
+CREATE TABLE casts(
+-- 	id serial PRIMARY KEY,
+	filmId INTEGER NOT NULL REFERENCES film,
+	peopleId INTEGER NOT NULL REFERENCES person
+);
