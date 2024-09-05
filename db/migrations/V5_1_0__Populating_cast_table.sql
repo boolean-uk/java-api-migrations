@@ -2,14 +2,44 @@ INSERT INTO casts(film_id, person_id)
     SELECT id, star_id
         FROM films;
 
-INSERT INTO casts (film_id, person_id) VALUES
-    (SELECT id FROM films WHERE name LIKE = '2001%', SELECT id FROM persons WHERE name = 'Gary Lockwood'),
-    (SELECT id FROM films WHERE name LIKE = '2001%', SELECT id FROM persons WHERE name = 'William Sylvester')),
-    (SELECT id FROM films WHERE name LIKE = '%A New Hope', SELECT id FROM persons WHERE name = 'Harrison Ford')),
-    (SELECT id FROM films WHERE name LIKE = '%A New Hope', SELECT id FROM persons WHERE name = 'Carrie Fisher')),
-    (SELECT id FROM films WHERE name = 'To Kill A Mockingbird', SELECT id FROM persons WHERE name = 'John Megna')),
-    (SELECT id FROM films WHERE name = 'To Kill A Mockingbird', SELECT id FROM persons WHERE name = 'Brock Peters')),
-    (SELECT id FROM films WHERE name = 'Titanic', SELECT id FROM persons WHERE name = 'Kate Winslet')),
-    (SELECT id FROM films WHERE name = 'Titanic', SELECT id FROM persons WHERE name = 'Billy Zane')),
-    (SELECT id FROM films WHERE name = 'Dr Zhivago', SELECT id FROM persons WHERE name = 'Omar Sharif')),
-    (SELECT id FROM films WHERE name = 'Dr Zhivago', SELECT id FROM persons WHERE name = 'Geraldine Chaplin'));
+
+INSERT INTO casts (film_id, person_id)
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title LIKE '2001%' AND persons.name = 'Gary Lockwood'
+                UNION ALL
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title LIKE '2001%' AND persons.name = 'William Sylvester'
+                UNION ALL
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title LIKE '%A New Hope' AND persons.name = 'Harrison Ford'
+                UNION ALL
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title LIKE '%A New Hope' AND persons.name = 'Carrie Fisher'
+                UNION ALL
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title = 'To Kill A Mockingbird' AND persons.name = 'John Megna'
+                UNION ALL
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title = 'To Kill A Mockingbird' AND persons.name = 'Brock Peters'
+                UNION ALL
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title = 'Titanic' AND persons.name = 'Kate Winslet'
+                UNION ALL
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title = 'Titanic' AND persons.name = 'Billy Zane'
+                UNION ALL
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title = 'Dr Zhivago' AND persons.name = 'Omar Sharif'
+                UNION ALL
+    SELECT films.id, persons.id
+        FROM films, persons
+            WHERE films.title = 'Dr Zhivago' AND persons.name = 'Geraldine Chaplin';

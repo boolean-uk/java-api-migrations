@@ -21,7 +21,7 @@ INSERT INTO persons(name, email)
                     SET email = COALESCE(persons.email, EXCLUDED.email);
 
 -- New actors for cast
-INSERT INTO persons (person_name, person_email, person_country, person_dob) VALUES
+INSERT INTO persons (name, email, country, dob) VALUES
 ('Gary Lockwood', 'gary.lockwood@example.com', 'USA', '1937-02-21'),
 ('William Sylvester', 'william.sylvester@example.com', 'USA', '1922-01-31'),
 ('Harrison Ford', 'harrison.ford@example.com', 'USA', '1942-07-13'),
