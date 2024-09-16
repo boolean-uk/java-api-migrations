@@ -1,0 +1,168 @@
+{
+  "individualResults": [
+    {
+      "schemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "flywayVersion": "9.22.2",
+      "database": "yrvbcthx",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-10-04T21:04:53.880658",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "table creation",
+          "type": "SQL",
+          "filepath": "/Users/krythuang/Documents/Boolean Exercises/Java/java-api-migrations/db/migrations/V1_0_0__table_creation.sql",
+          "executionTime": 191
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.22.2",
+      "database": "yrvbcthx",
+      "warnings": [],
+      "timestamp": "2023-10-04T22:03:21.873948",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.1",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "table creation",
+          "type": "SQL",
+          "filepath": "/Users/krythuang/Documents/Boolean Exercises/Java/java-api-migrations/db/migrations/V1_0_0__table_creation.sql",
+          "executionTime": 185
+        },
+        {
+          "category": "Versioned",
+          "version": "1.0.1",
+          "description": "seperate tables",
+          "type": "SQL",
+          "filepath": "/Users/krythuang/Documents/Boolean Exercises/Java/java-api-migrations/db/migrations/V1_0_1__seperate_tables.sql",
+          "executionTime": 433
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": true,
+      "flywayVersion": "9.22.2",
+      "database": "yrvbcthx",
+      "warnings": [],
+      "timestamp": "2023-10-04T22:05:34.522257",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.1",
+      "targetSchemaVersion": "1.0.2",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.2",
+          "description": "alter tables",
+          "type": "SQL",
+          "filepath": "/Users/krythuang/Documents/Boolean Exercises/Java/java-api-migrations/db/migrations/V1_0_2__alter_tables.sql",
+          "executionTime": 572
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.22.2",
+      "database": "yrvbcthx",
+      "warnings": [],
+      "timestamp": "2023-10-04T22:09:35.128778",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1.0.2",
+      "targetSchemaVersion": "1.0.3",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.3",
+          "description": "inser values",
+          "type": "SQL",
+          "filepath": "/Users/krythuang/Documents/Boolean Exercises/Java/java-api-migrations/db/migrations/V1_0_3__inser_values.sql",
+          "executionTime": 305
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.22.2",
+      "database": "yrvbcthx",
+      "warnings": [],
+      "timestamp": "2023-10-04T22:17:48.532541",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "1.0.3",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "table creation",
+          "type": "SQL",
+          "filepath": "/Users/krythuang/Documents/Boolean Exercises/Java/java-api-migrations/db/migrations/V1_0_0__table_creation.sql",
+          "executionTime": 184
+        },
+        {
+          "category": "Versioned",
+          "version": "1.0.1",
+          "description": "seperate tables",
+          "type": "SQL",
+          "filepath": "/Users/krythuang/Documents/Boolean Exercises/Java/java-api-migrations/db/migrations/V1_0_1__seperate_tables.sql",
+          "executionTime": 426
+        },
+        {
+          "category": "Versioned",
+          "version": "1.0.2",
+          "description": "alter tables",
+          "type": "SQL",
+          "filepath": "/Users/krythuang/Documents/Boolean Exercises/Java/java-api-migrations/db/migrations/V1_0_2__alter_tables.sql",
+          "executionTime": 243
+        },
+        {
+          "category": "Versioned",
+          "version": "1.0.3",
+          "description": "insert values",
+          "type": "SQL",
+          "filepath": "/Users/krythuang/Documents/Boolean Exercises/Java/java-api-migrations/db/migrations/V1_0_3__insert_values.sql",
+          "executionTime": 258
+        }
+      ],
+      "migrationsExecuted": 4,
+      "success": true,
+      "flywayVersion": "9.22.2",
+      "database": "yrvbcthx",
+      "warnings": [],
+      "timestamp": "2023-10-04T22:20:00.372439",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
