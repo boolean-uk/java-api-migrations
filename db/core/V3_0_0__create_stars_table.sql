@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS Stars (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    dateOfBirth DATE NOT NULL
+);
