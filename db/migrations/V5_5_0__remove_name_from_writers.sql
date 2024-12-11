@@ -1,0 +1,2 @@
+ALTER TABLE writers
+DROP COLUMN name;
