@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS Writer(
+    id SERIAL PRIMARY KEY NOT NULL,
+    name TEXT,
+    email TEXT,
+    UNIQUE(email)
+);
+
+ALTER TABLE Movies
+DROP COLUMN IF EXISTS writer_id,
+DROP COLUMN IF EXISTS writer;
+
+ALTER TABLE Movies
+ADD COLUMN IF NOT EXISTS writer_id BIGINT(20) unsigned;
+
+ALTER TABLE Movies
+ADD FOREIGN KEY IF NOT EXISTS (writer_id) REFERENCES Writer(id);

@@ -1,0 +1,2 @@
+ALTER TABLE Movies
+DROP COLUMN IF EXISTS writer_email;
