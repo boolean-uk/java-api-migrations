@@ -1,0 +1,3 @@
+ALTER TABLE FILMS
+DROP COLUMN Director,
+DROP COLUMN Director_country;
