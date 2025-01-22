@@ -1,0 +1,3 @@
+ALTER TABLE IF EXISTS Films
+DROP COLUMN writer,
+DROP COLUMN writer_email;
