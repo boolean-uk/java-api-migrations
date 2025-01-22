@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS writers(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    email VARCHAR(255)
+);
