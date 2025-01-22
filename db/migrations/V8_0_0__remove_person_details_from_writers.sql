@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS Writers
+DROP COLUMN name;

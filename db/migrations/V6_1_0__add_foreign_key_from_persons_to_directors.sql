@@ -1,0 +1,5 @@
+ALTER TABLE IF EXISTS Directors
+ADD COLUMN person_id INTEGER;
+
+ALTER TABLE IF EXISTS Directors
+ADD CONSTRAINT fk_person_id FOREIGN KEY(person_id) REFERENCES Persons(id);
