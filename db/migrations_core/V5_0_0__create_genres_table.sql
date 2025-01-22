@@ -1,0 +1,4 @@
+ CREATE TABLE IF NOT EXISTS Genres (
+    id SERIAL PRIMARY KEY,
+    name TEXT
+);
