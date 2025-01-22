@@ -1,0 +1,17 @@
+ALTER TABLE Films
+ADD COLUMN director INT;
+
+ALTER TABLE Films
+ADD CONSTRAINT fk_director FOREIGN KEY (director) REFERENCES Persons(id);
+
+ALTER TABLE Films
+ADD COLUMN writer INT;
+
+ALTER TABLE Films
+ADD CONSTRAINT fk_writer FOREIGN KEY (writer) REFERENCES Persons(id);
+
+ALTER TABLE Films
+ADD COLUMN star INT;
+
+ALTER TABLE Films
+ADD CONSTRAINT fk_star FOREIGN KEY (star) REFERENCES Persons(id);

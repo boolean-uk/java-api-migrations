@@ -1,0 +1,4 @@
+ALTER TABLE FILMS
+DROP COLUMN star_id,
+DROP COLUMN director_id,
+DROP COLUMN writer_id;
