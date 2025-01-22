@@ -1,0 +1,3 @@
+ALTER TABLE Films
+DROP COLUMN starName,
+DROP COLUMN starDob;
