@@ -2,4 +2,4 @@ ALTER TABLE IF EXISTS Films
 ADD COLUMN writer_id INTEGER;
 
 ALTER TABLE IF EXISTS Films
-ADD CONSTRAINT fk_writer_id FOREIGN KEY(writer_id) REFERENCES Writers(id);
+ADD CONSTRAINT fk_writer_id FOREIGN KEY(writer_id) REFERENCES Persons(id);

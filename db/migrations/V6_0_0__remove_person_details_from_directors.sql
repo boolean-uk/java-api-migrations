@@ -1,0 +1,2 @@
+ALTER TABLE IF EXISTS Directors
+DROP COLUMN name;
