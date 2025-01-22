@@ -1,0 +1,5 @@
+ALTER TABLE Films
+ADD COLUMN genre_id INT;
+
+ALTER TABLE Films
+ADD CONSTRAINT fk_genre_id FOREIGN KEY (genre_id) REFERENCES Genres (id);

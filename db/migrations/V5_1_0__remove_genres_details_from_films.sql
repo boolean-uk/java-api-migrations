@@ -1,0 +1,2 @@
+ALTER TABLE Films
+DROP COLUMN genre;
