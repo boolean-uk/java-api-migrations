@@ -1,5 +1,5 @@
  CREATE TABLE IF NOT EXISTS Stars (
     id SERIAL PRIMARY KEY,
     name TEXT,
-    dob INTEGER
+    dob TEXT
 );
