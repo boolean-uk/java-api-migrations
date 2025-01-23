@@ -1,0 +1,35 @@
+CREATE TABLE IF NOT EXISTS person(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) not null,
+    country VARCHAR(255),
+    dateOfBirth DATE,
+    email VARCHAR(255)
+);
+
+INSERT INTO person(name, country, dateOfBirth, email) VALUES 
+    ('Stanley Kubrick', 'USA', NULL, NULL),
+    ('Keir Dullea', NULL, '1936-05-30', NULL),
+    ('Arthur C Clarke', NULL, NULL, 'arthur@clarke.com'),
+    ('George Lucas', 'USA', NULL, 'george@email.com'),
+    ('Mark Hamill', NULL, '1951-09-25', NULL),
+    ('Robert Mulligan', 'USA', NULL, NULL),
+    ('Gregory Peck', NULL, '1916-04-05', NULL),
+    ('Harper Lee', NULL, NULL, 'harper@lee.com'),
+    ('James Cameron', 'Canada', NULL, 'james@cameron.com'),
+    ('Leonardo DiCaprio', NULL, '1974-11-11', NULL),
+    ('David Lean', 'UK', NULL, NULL),
+    ('Julie Christie', NULL, '1940-04-14', NULL),
+    ('Boris Pasternak', NULL, NULL, 'boris@boris.com'),
+    ('Anthony Mann', 'USA', NULL, NULL),
+    ('Charlton Heston', NULL, '1923-10-04', NULL),
+    ('Frederick Frank', NULL, NULL, 'fred@frank.com'),
+    ('Theodoros Angelopoulos', 'Greece', NULL, 'theo@angelopoulos.com'),
+    ('Manos Katrakis', NULL, '1908-08-14', NULL),
+    ('Paul Verhoeven', 'Netherlands', NULL, NULL),
+    ('Rutger Hauer', NULL, '1944-01-23', NULL),
+    ('Erik Hazelhoff Roelfzema', NULL, NULL, 'erik@roelfzema.com'),
+    ('Krzysztof Kieslowski', 'Poland', NULL, 'email@email.com'),
+    ('Juliette Binoche', NULL, '1964-03-09', NULL),
+    ('Jean-Paul Rappeneau', 'France', NULL, NULL),
+    ('Gerard Depardieu', NULL, '1948-12-27', NULL),
+    ('Edmond Rostand', NULL, NULL, 'edmond@rostand.com');
