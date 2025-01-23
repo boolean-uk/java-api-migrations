@@ -1,0 +1,2 @@
+ALTER TABLE films
+DROP COLUMN starId;
